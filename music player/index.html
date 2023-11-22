@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen -  Music Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app"></div>
+  <div class="player">
+    <div class="playerWrapper">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.359 8.748" id="arrow"><defs><style>.a{fill:none;stroke:#cbc9c7;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><path class="a" d="M617.462,52.508,630.3,57.256l12.524-4.748" transform="translate(-615.462 -50.508)"/></svg>
+      
+      <div class="albumCover">
+        <img src="https://i.scdn.co/image/b8e654b7154a051c6634343cbfa2c6897b95b52b" alt="ashes illenium" id="albumImage" class="paused">
+        <img src="https://i.scdn.co/image/b8e654b7154a051c6634343cbfa2c6897b95b52b" alt="shadow" id="albumShadow" class="paused">
+      </div>
+      
+      <div class="progressSlider">
+        <div class="sliderContainer">
+          <input type="range" min="1" max="204" value="14" id="slider">
+          <progress value="14" max="204">
+        </div>
+        <div class="time">
+          <p id="currentTime">0:14</p>
+          <p id="remainingTime">-3:10</p>
+        </div>
+      </div>
+      
+      <div class="content">
+        <div class="titleMask"></div>
+        <h2 id="title">It’s All on U (feat. Liam O’Donnell)</h2>
+        <h3 id="info">Illenium — Ashes</h3>
+      </div>
+      
+      <div class="controls">
+        <button id="previousSongButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.845 18.963"><g transform="translate(-0.872 19.791)"><path d="M14.759-19.637a1,1,0,0,1,1.014-.026,1,1,0,0,1,.515.874v16.96a1,1,0,0,1-.52.877,1,1,0,0,1-1.019-.035L1.332-9.582a1,1,0,0,1-.461-.848,1,1,0,0,1,.471-.843Z"/><path d="M30.188-19.64a1,1,0,0,1,1.014-.026,1,1,0,0,1,.515.874v16.96a1,1,0,0,1-.52.877,1,1,0,0,1-1.019-.035l-13.416-8.6a1,1,0,0,1-.461-.848,1,1,0,0,1,.471-.842Z"/></g></svg></button>
+        <button id="playButton" aria-haspopup="true" onclick="play()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.769 34.152"><g transform="translate(-214 -529.596)"><path d="M25.015.273A1.8,1.8,0,0,1,27.769,1.8V32.351A1.8,1.8,0,0,1,25,33.867L.83,18.385A1.8,1.8,0,0,1,.848,15.34Z" transform="translate(241.769 563.748) rotate(180)"/></g></svg></button>
+        <button id="nextSongButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.845 18.963"><g transform="translate(31.717 -0.828) rotate(180)"><path d="M14.759-19.637a1,1,0,0,1,1.014-.026,1,1,0,0,1,.515.874v16.96a1,1,0,0,1-.52.877,1,1,0,0,1-1.019-.035L1.332-9.582a1,1,0,0,1-.461-.848,1,1,0,0,1,.471-.843Z"/><path d="M30.188-19.64a1,1,0,0,1,1.014-.026,1,1,0,0,1,.515.874v16.96a1,1,0,0,1-.52.877,1,1,0,0,1-1.019-.035l-13.416-8.6a1,1,0,0,1-.461-.848,1,1,0,0,1,.471-.842Z"/></g></svg></button>
+      </div>
+      
+      <!--<div class="volume">
+        <img src="" alt="volume off icon" id="volumeOffIcon">
+        <div class="sliderContainer2">
+          <input type="range" min="1" max="17" value="4">
+        </div>
+      </div>-->
+      
+    </div>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
