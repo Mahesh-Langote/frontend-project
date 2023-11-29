@@ -1,0 +1,76 @@
+body {
+  filter: url("#goo");
+  background-color: #03254c;
+  background: linear-gradient(#03254c, black);
+}
+.menu-bar {
+  position: relative;
+  display: flex;
+  background-color: #1167b1;
+  background: linear-gradient(#02457a, #1167b1);
+  box-shadow: 1px 1px 5px #21cdfc;
+  max-width: max-content;
+  margin: 45vh auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+.menu-bar div {
+  cursor: pointer;
+  z-index: 1;
+  padding-right: 40px;
+}
+.menu-bar div:last-of-type {
+  padding-right: 0px;
+}
+.selected {
+  position: absolute;
+  width: 18px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #d0efff;
+  background: linear-gradient(rgb(223, 88, 88), #0fece8);
+  z-index: 0;
+  left: 14px;
+  top: 17px;
+}
+
+.notification {
+  animation: notification 1s;
+  left: 100px;
+  transition: left 1.5s;
+}
+.profile {
+  animation: profile 1s;
+  left: 182px;
+  transition: left 1.5s;
+}
+.setting {
+  animation: setting 1s;
+  left: 268px;
+  transition: left 1.5s;
+}
+.home {
+  animation: home 1s;
+  left: 15px;
+  transition: left 1.5s;
+}
+@keyframes profile {
+  50% {
+    top: -60px;
+  }
+}
+@keyframes setting {
+  50% {
+    top: -60px;
+  }
+}
+@keyframes notification {
+  50% {
+    top: -60px;
+  }
+}
+@keyframes home {
+  50% {
+    top: -60px;
+  }
+}
